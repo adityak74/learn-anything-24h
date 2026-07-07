@@ -1,21 +1,49 @@
-# Learn Anything 24h
+<h1 align="center">Learn Anything 24h</h1>
 
-[![Skill](https://img.shields.io/badge/Skill-Learn%20Anything%2024h-0f172a)](#)
-[![Claude Code](https://img.shields.io/badge/Claude%20Code-supported-d97706)](#claude-code)
-[![Codex](https://img.shields.io/badge/Codex-supported-2563eb)](#codex)
-[![Hermes](https://img.shields.io/badge/Hermes-supported-16a34a)](#hermes)
-[![OpenClaw](https://img.shields.io/badge/OpenClaw-supported-0f766e)](#openclaw)
-[![OpenCode](https://img.shields.io/badge/OpenCode-supported-7c2d12)](#opencode)
-[![Mode](https://img.shields.io/badge/Mode-active%20learning-059669)](#what-it-does)
-[![Output](https://img.shields.io/badge/Output-final%20artifact-7c3aed)](#what-you-get)
-[![GitHub stars](https://img.shields.io/github/stars/adityak74/learn-anything-24h?style=social)](https://github.com/adityak74/learn-anything-24h/stargazers)
-[![License: MIT](https://img.shields.io/github/license/adityak74/learn-anything-24h)](https://github.com/adityak74/learn-anything-24h/blob/main/LICENSE)
+<p align="center">
+  <img src="./logo.svg" alt="Learn Anything 24h logo" width="860">
+</p>
 
-Turn any hard topic into a focused 24-hour learning sprint.
+<p align="center">
+  <a href="https://adityakarnam.com">
+    <img src="https://img.shields.io/badge/Checkout-adityakarnam.com-111827?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Checkout adityakarnam.com">
+  </a>
+</p>
 
-This is not a reading-list generator. It is a forced-output learning skill for Claude Code, Codex, Hermes, OpenClaw, and OpenCode that compresses a complex topic into an active-learning plan with exercises, teach-back prompts, and a required final artifact.
+<p align="center">
+  <a href="#"><img src="https://img.shields.io/badge/Skill-Learn%20Anything%2024h-0f172a" alt="Skill"></a>
+  <a href="#claude-code"><img src="https://img.shields.io/badge/Claude%20Code-supported-d97706" alt="Claude Code"></a>
+  <a href="#codex"><img src="https://img.shields.io/badge/Codex-supported-2563eb" alt="Codex"></a>
+  <a href="#hermes"><img src="https://img.shields.io/badge/Hermes-supported-16a34a" alt="Hermes"></a>
+  <a href="#openclaw"><img src="https://img.shields.io/badge/OpenClaw-supported-0f766e" alt="OpenClaw"></a>
+  <a href="#opencode"><img src="https://img.shields.io/badge/OpenCode-supported-7c2d12" alt="OpenCode"></a>
+  <a href="#what-it-does"><img src="https://img.shields.io/badge/Mode-active%20learning-059669" alt="Mode"></a>
+  <a href="#what-you-get"><img src="https://img.shields.io/badge/Output-final%20artifact-7c3aed" alt="Output"></a>
+  <a href="https://github.com/adityak74/learn-anything-24h/stargazers"><img src="https://img.shields.io/github/stars/adityak74/learn-anything-24h?style=social" alt="GitHub stars"></a>
+  <a href="https://github.com/adityak74/learn-anything-24h/blob/main/LICENSE"><img src="https://img.shields.io/github/license/adityak74/learn-anything-24h" alt="License"></a>
+</p>
 
-**Promise:** operational fluency in one day, not fake mastery.
+> Turn any hard topic into a focused 24-hour learning sprint.
+>
+> This is not a reading-list generator. It is a forced-output learning skill for Claude Code, Codex, Hermes, OpenClaw, and OpenCode that compresses a complex topic into an active-learning plan with exercises, teach-back prompts, and a required final artifact.
+>
+> **Promise:** operational fluency in one day, not fake mastery.
+
+## Quick Start
+
+1. Install the skill for your platform from the [Install](#install) section below.
+2. Invoke it with a concrete outcome, for example:
+
+```text
+/learn-anything-24h Learn distributed systems for Staff Engineer interviews
+```
+
+3. Get a time-boxed sprint with concepts, exercises, traps, and a final artifact.
+
+## What's Inside
+
+Skill Description
+`learn-anything-24h` Turns any hard topic into a focused 24-hour active-learning sprint with concrete exercises and a required proof-of-learning artifact.
 
 ## Why This Exists
 
@@ -58,6 +86,17 @@ It works especially well for:
 - interview preparation
 - architecture and staff-level topics
 - learning-by-building projects
+
+## The `learn-anything-24h` Skill
+
+Works best when you ask to learn something deeply enough to explain it, implement it, teach it, or use it in an interview.
+
+## What Changes When Active
+
+- It prioritizes the few concepts that actually move the topic.
+- It forces retrieval practice instead of passive reading.
+- It gives you applied exercises that expose fake understanding quickly.
+- It ends with a concrete artifact you can show, ship, or teach from.
 
 ## Supported Platforms
 
@@ -268,49 +307,6 @@ This repo also ships a project-local OpenCode skill in:
 </details>
 
 `install.sh` is still available for direct local skill installation across all supported platforms.
-
-## Repo Layout
-
-```text
-.claude-plugin/
-  marketplace.json
-  plugin.json
-skills/
-  claude/
-    learn-anything-24h/
-      SKILL.md
-  codex/
-    learn-anything-24h/
-      SKILL.md
-      agents/
-        openai.yaml
-  hermes/
-    learn-anything-24h/
-      SKILL.md
-  openclaw/
-    learn-anything-24h/
-      SKILL.md
-  opencode/
-    learn-anything-24h/
-      SKILL.md
-.agents/
-  skills/
-    learn-anything-24h/
-      SKILL.md
-.codex/
-  skills/
-    learn-anything-24h/
-      SKILL.md
-      agents/
-        openai.yaml
-.opencode/
-  skills/
-    learn-anything-24h/
-      SKILL.md
-install.sh
-SPEC.md
-README.md
-```
 
 ## Design Principles
 
