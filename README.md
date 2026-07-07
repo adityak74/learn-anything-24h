@@ -3,6 +3,9 @@
 [![Skill](https://img.shields.io/badge/Skill-Learn%20Anything%2024h-0f172a)](#)
 [![Claude Code](https://img.shields.io/badge/Claude%20Code-supported-d97706)](#claude-code)
 [![Codex](https://img.shields.io/badge/Codex-supported-2563eb)](#codex)
+[![Hermes](https://img.shields.io/badge/Hermes-supported-16a34a)](#hermes)
+[![OpenClaw](https://img.shields.io/badge/OpenClaw-supported-0f766e)](#openclaw)
+[![OpenCode](https://img.shields.io/badge/OpenCode-supported-7c2d12)](#opencode)
 [![Mode](https://img.shields.io/badge/Mode-active%20learning-059669)](#what-it-does)
 [![Output](https://img.shields.io/badge/Output-final%20artifact-7c3aed)](#what-you-get)
 [![GitHub stars](https://img.shields.io/github/stars/adityak74/learn-anything-24h?style=social)](https://github.com/adityak74/learn-anything-24h/stargazers)
@@ -10,7 +13,7 @@
 
 Turn any hard topic into a focused 24-hour learning sprint.
 
-This is not a reading-list generator. It is a forced-output learning skill for Claude Code and Codex that compresses a complex topic into an active-learning plan with exercises, teach-back prompts, and a required final artifact.
+This is not a reading-list generator. It is a forced-output learning skill for Claude Code, Codex, Hermes, OpenClaw, and OpenCode that compresses a complex topic into an active-learning plan with exercises, teach-back prompts, and a required final artifact.
 
 **Promise:** operational fluency in one day, not fake mastery.
 
@@ -55,6 +58,14 @@ It works especially well for:
 - interview preparation
 - architecture and staff-level topics
 - learning-by-building projects
+
+## Supported Platforms
+
+- Claude Code
+- Codex
+- Hermes
+- OpenClaw
+- OpenCode
 
 ## What You Get
 
@@ -132,9 +143,49 @@ This repo also includes a project-local Codex skill at:
 
 That lets Codex discover the skill directly when this repository is open.
 
+## Hermes
+
+Hermes uses the Hermes-specific variant in:
+
+```text
+skills/hermes/learn-anything-24h/SKILL.md
+```
+
+## OpenClaw
+
+OpenClaw uses the OpenClaw-specific variant in:
+
+```text
+skills/openclaw/learn-anything-24h/SKILL.md
+```
+
+This repo also includes an agent-compatible project-local skill at:
+
+```text
+.agents/skills/learn-anything-24h/SKILL.md
+```
+
+## OpenCode
+
+OpenCode uses the OpenCode-specific variant in:
+
+```text
+skills/opencode/learn-anything-24h/SKILL.md
+```
+
+This repo also includes native and agent-compatible project-local skills at:
+
+```text
+.opencode/skills/learn-anything-24h/SKILL.md
+.agents/skills/learn-anything-24h/SKILL.md
+```
+
 ## Install
 
-For Claude Code:
+Pick your platform below. Each section stays collapsed to keep the README compact.
+
+<details>
+<summary><strong>Claude Code</strong></summary>
 
 ```bash
 claude marketplace add .
@@ -145,8 +196,10 @@ Or, from inside Claude Code:
 ```text
 /plugin add
 ```
+</details>
 
-For Codex:
+<details>
+<summary><strong>Codex</strong></summary>
 
 ```bash
 codex marketplace add .
@@ -157,8 +210,64 @@ Or, from inside Codex:
 ```text
 /plugin add
 ```
+</details>
 
-`install.sh` is still available for direct local skill installation if you want to copy the skill files into `~/.claude/skills/learn-anything-24h/` and `~/.codex/skills/learn-anything-24h/`.
+<details>
+<summary><strong>Hermes</strong></summary>
+
+```bash
+mkdir -p ~/.hermes/skills/learn-anything-24h
+cp skills/hermes/learn-anything-24h/SKILL.md ~/.hermes/skills/learn-anything-24h/SKILL.md
+```
+
+Then invoke it as:
+
+```text
+/learn-anything-24h Learn distributed systems for Staff Engineer interviews
+```
+</details>
+
+<details>
+<summary><strong>OpenClaw</strong></summary>
+
+Install into the current workspace:
+
+```bash
+openclaw skills install ./skills/openclaw/learn-anything-24h
+```
+
+Install globally for local agents:
+
+```bash
+openclaw skills install ./skills/openclaw/learn-anything-24h --global
+```
+
+Manual global install also works:
+
+```bash
+mkdir -p ~/.openclaw/skills/learn-anything-24h
+cp skills/openclaw/learn-anything-24h/SKILL.md ~/.openclaw/skills/learn-anything-24h/SKILL.md
+```
+</details>
+
+<details>
+<summary><strong>OpenCode</strong></summary>
+
+Global install:
+
+```bash
+mkdir -p ~/.config/opencode/skills/learn-anything-24h
+cp skills/opencode/learn-anything-24h/SKILL.md ~/.config/opencode/skills/learn-anything-24h/SKILL.md
+```
+
+This repo also ships a project-local OpenCode skill in:
+
+```text
+.opencode/skills/learn-anything-24h/SKILL.md
+```
+</details>
+
+`install.sh` is still available for direct local skill installation across all supported platforms.
 
 ## Repo Layout
 
@@ -175,12 +284,29 @@ skills/
       SKILL.md
       agents/
         openai.yaml
+  hermes/
+    learn-anything-24h/
+      SKILL.md
+  openclaw/
+    learn-anything-24h/
+      SKILL.md
+  opencode/
+    learn-anything-24h/
+      SKILL.md
+.agents/
+  skills/
+    learn-anything-24h/
+      SKILL.md
 .codex/
   skills/
     learn-anything-24h/
       SKILL.md
       agents/
         openai.yaml
+.opencode/
+  skills/
+    learn-anything-24h/
+      SKILL.md
 install.sh
 SPEC.md
 README.md
