@@ -45,6 +45,13 @@
 Skill Description
 `learn-anything-24h` Turns any hard topic into a focused 24-hour active-learning sprint with concrete exercises and a required proof-of-learning artifact.
 
+## Why People Use It
+
+- You need to get useful on a hard topic fast.
+- You want output, not a giant reading list.
+- You need interview-level, builder-level, or staff-level clarity quickly.
+- You want a proof-of-learning artifact at the end, not vague confidence.
+
 ## Why This Exists
 
 Most AI learning prompts fail in predictable ways:
@@ -87,24 +94,12 @@ It works especially well for:
 - architecture and staff-level topics
 - learning-by-building projects
 
-## The `learn-anything-24h` Skill
-
-Works best when you ask to learn something deeply enough to explain it, implement it, teach it, or use it in an interview.
-
 ## What Changes When Active
 
 - It prioritizes the few concepts that actually move the topic.
 - It forces retrieval practice instead of passive reading.
 - It gives you applied exercises that expose fake understanding quickly.
 - It ends with a concrete artifact you can show, ship, or teach from.
-
-## Supported Platforms
-
-- Claude Code
-- Codex
-- Hermes
-- OpenClaw
-- OpenCode
 
 ## What You Get
 
@@ -135,89 +130,18 @@ Every run follows this structure:
 /learn-anything-24h Learn MCP server architecture in 6 hours
 ```
 
-## Claude Code
+## Best Use Cases
 
-Claude Code uses the Claude-specific variant in:
-
-```text
-skills/claude/learn-anything-24h/SKILL.md
-```
-
-The repo also includes Claude marketplace metadata:
-
-```text
-.claude-plugin/plugin.json
-.claude-plugin/marketplace.json
-```
-
-Install with either:
-
-```bash
-claude marketplace add .
-```
-
-Or, from inside Claude Code:
-
-```text
-/plugin add
-```
-
-## Codex
-
-Codex uses the Codex-specific variant in:
-
-```text
-skills/codex/learn-anything-24h/SKILL.md
-skills/codex/learn-anything-24h/agents/openai.yaml
-```
-
-The Codex version includes its own agent metadata for installation into the local Codex skill directory.
-
-This repo also includes a project-local Codex skill at:
-
-```text
-.codex/skills/learn-anything-24h/SKILL.md
-.codex/skills/learn-anything-24h/agents/openai.yaml
-```
-
-That lets Codex discover the skill directly when this repository is open.
-
-## Hermes
-
-Hermes uses the Hermes-specific variant in:
-
-```text
-skills/hermes/learn-anything-24h/SKILL.md
-```
-
-## OpenClaw
-
-OpenClaw uses the OpenClaw-specific variant in:
-
-```text
-skills/openclaw/learn-anything-24h/SKILL.md
-```
-
-This repo also includes an agent-compatible project-local skill at:
-
-```text
-.agents/skills/learn-anything-24h/SKILL.md
-```
-
-## OpenCode
-
-OpenCode uses the OpenCode-specific variant in:
-
-```text
-skills/opencode/learn-anything-24h/SKILL.md
-```
-
-This repo also includes native and agent-compatible project-local skills at:
-
-```text
-.opencode/skills/learn-anything-24h/SKILL.md
-.agents/skills/learn-anything-24h/SKILL.md
-```
+- `Interview prep`
+  Ask for tradeoffs, likely questions, whiteboard explanations, and answer drills.
+- `Learn by building`
+  Ask for an implementation-focused sprint ending in working code.
+- `Research understanding`
+  Ask for a paper breakdown with equations, assumptions, and critique.
+- `Staff-level systems`
+  Ask for architecture, scaling, tradeoffs, and failure-mode thinking.
+- `Crash-course fluency`
+  Give a smaller time budget and force the same output structure.
 
 ## Install
 
@@ -235,6 +159,14 @@ Or, from inside Claude Code:
 ```text
 /plugin add
 ```
+
+Files used:
+
+```text
+skills/claude/learn-anything-24h/SKILL.md
+.claude-plugin/plugin.json
+.claude-plugin/marketplace.json
+```
 </details>
 
 <details>
@@ -248,6 +180,15 @@ Or, from inside Codex:
 
 ```text
 /plugin add
+```
+
+Files used:
+
+```text
+skills/codex/learn-anything-24h/SKILL.md
+skills/codex/learn-anything-24h/agents/openai.yaml
+.codex/skills/learn-anything-24h/SKILL.md
+.codex/skills/learn-anything-24h/agents/openai.yaml
 ```
 </details>
 
@@ -263,6 +204,12 @@ Then invoke it as:
 
 ```text
 /learn-anything-24h Learn distributed systems for Staff Engineer interviews
+```
+
+Files used:
+
+```text
+skills/hermes/learn-anything-24h/SKILL.md
 ```
 </details>
 
@@ -287,6 +234,13 @@ Manual global install also works:
 mkdir -p ~/.openclaw/skills/learn-anything-24h
 cp skills/openclaw/learn-anything-24h/SKILL.md ~/.openclaw/skills/learn-anything-24h/SKILL.md
 ```
+
+Files used:
+
+```text
+skills/openclaw/learn-anything-24h/SKILL.md
+.agents/skills/learn-anything-24h/SKILL.md
+```
 </details>
 
 <details>
@@ -303,6 +257,14 @@ This repo also ships a project-local OpenCode skill in:
 
 ```text
 .opencode/skills/learn-anything-24h/SKILL.md
+```
+
+Files used:
+
+```text
+skills/opencode/learn-anything-24h/SKILL.md
+.opencode/skills/learn-anything-24h/SKILL.md
+.agents/skills/learn-anything-24h/SKILL.md
 ```
 </details>
 
@@ -344,6 +306,12 @@ If you publish examples, demos, or forks, good showcase topics include:
 - `Learn distributed systems for senior/staff interviews`
 - `Learn retrieval systems by building one`
 - `Learn MCP by implementing a local server`
+
+Best share format:
+
+- the original prompt
+- one screenshot of the generated sprint
+- the final artifact produced from it
 
 ## Star History
 
