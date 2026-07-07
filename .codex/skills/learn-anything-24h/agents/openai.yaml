@@ -1,0 +1,7 @@
+interface:
+  display_name: "Learn Anything 24h"
+  short_description: "Build a 24-hour learning sprint"
+  default_prompt: "Use $learn-anything-24h to turn a hard topic into a focused 24-hour active-learning sprint."
+
+policy:
+  allow_implicit_invocation: true

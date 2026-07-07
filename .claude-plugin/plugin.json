@@ -1,0 +1,20 @@
+{
+  "name": "learn-anything-24h",
+  "description": "Claude Code skill for turning hard topics into focused 24-hour active-learning sprints.",
+  "version": "0.1.0",
+  "author": {
+    "name": "Aditya Karnam",
+    "url": "https://github.com/adityak74"
+  },
+  "license": "MIT",
+  "repository": "https://github.com/adityak74/learn-anything-24h",
+  "homepage": "https://github.com/adityak74/learn-anything-24h#readme",
+  "keywords": [
+    "claude-code",
+    "skills",
+    "learning",
+    "active-recall",
+    "study-system",
+    "education"
+  ]
+}

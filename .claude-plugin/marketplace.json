@@ -1,0 +1,22 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "learn-anything-24h",
+  "description": "Marketplace metadata for the Learn Anything 24h Claude Code skill.",
+  "owner": {
+    "name": "Aditya Karnam",
+    "url": "https://github.com/adityak74"
+  },
+  "plugins": [
+    {
+      "name": "learn-anything-24h",
+      "description": "Turn hard topics into structured 24-hour active-learning sprints with exercises, retrieval practice, and a final artifact.",
+      "author": {
+        "name": "Aditya Karnam",
+        "url": "https://github.com/adityak74"
+      },
+      "category": "education",
+      "source": "./",
+      "homepage": "https://github.com/adityak74/learn-anything-24h#readme"
+    }
+  ]
+}
